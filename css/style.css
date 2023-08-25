@@ -1,0 +1,198 @@
+/* reset de estilos e import de fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos gerais da pagina */
+body{
+    /* background: linear-gradient(45deg, #eee, #ccc); */
+    background-color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+/* containers principal  */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* container dos dados */
+.dados,
+.sobre{
+    width: 80%;
+    height: 50vh;
+    margin: 2px auto;
+    background: linear-gradient(45deg, #030331, #006, #007 );
+    border-radius: 10px;
+    justify-self: flex-start;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(4, 4, 4, 0.559);
+}
+
+
+/* Conteudo container dados */
+.fotoPerfil{
+    width: 180px;
+    height: 180px;
+    /* border-radius: 80px; */
+    border: 2px solid #225;
+    justify-self: center;
+    align-self: center;
+    transition: 0.8s;
+}
+
+.fotoPerfil:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.8s;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+
+/* animaacao da foto de perfil */
+.animaçao-border{
+    border: 2px solid transparent;
+    border-radius: 90px;
+    animation: border-pulse 3s infinite;
+
+}
+@keyframes border-pulse {
+    0%, 100%{
+        border-color: #08f;
+    }
+    25% {
+        border-color: #05f;
+    }
+    35%{
+        border-color: #0f8;
+    }
+    50%{
+        border-color: #0f0;
+    }
+    90%{
+        border-color: #f00;
+    }
+    100%{
+        border-color: #800;
+    }
+}
+
+/* estilos de conteudo */
+.dados-principais, .descricao{
+    color: #fff;
+    margin: auto;
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.dados-principais a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 5px;
+}
+
+/* container do sobre e descricao */
+.sobre, 
+.rodape{
+    width: 80%;
+    height: 50%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #eee, #ccc);
+    padding: 10px;
+    display: block;
+}
+
+.descricao{
+    font-size: 15px;
+    color: #000;
+    margin: 18px auto;
+    padding: 0 8px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.titulo-descricao{
+    text-align: center;
+    color: #006;
+    padding: 20px;
+}
+
+/* botao menu com as redes */
+.exibir-menu{
+    border-radius: 5px;
+    border: none;
+    background-color: #00f;
+    height: 35px;
+    width: 130px;
+    color: #fff;
+    transition: 0.8s;
+    margin-top: 10px;
+    user-select: none;
+}
+
+.menu{
+    width: 130px;
+    display: none;
+    font-size: 14px;
+    transition: 0.8s;
+    text-align: center;
+    user-select: none;
+}
+
+ul li{
+    list-style: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.8s;
+    user-select: none;
+}
+
+li:hover,
+.exibir-menu:hover,
+.rodape img:hover{
+    background-color: #00f;
+    /* box-shadow: 0 0 5px #0f0 , 0 0 25px #080, 0 0 50px #060, 0 0 200px #0f0; */
+    box-shadow: 0 0 5px #00f , 0 0 25px #008, 0 0 50px #006, 0 0 200px #00f;
+
+    transform: scale(1.2);
+    transition: 0.5s ease-in;
+    cursor: pointer;
+}
+
+/* classes para enventos com JS */
+.visivel{
+    display: block;
+    transition: 0.8s;
+}
+.invisivel{
+    display: none;
+}
+
+/* rodape */
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.rodape img {
+    width: 50px;
+    border-radius: 50px;
+    transition: 0.8s;
+}
