@@ -11,7 +11,6 @@
 
 /* estilos gerais da pagina */
 body{
-    /* background: linear-gradient(45deg, #eee, #ccc); */
     background-color: #ccc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
@@ -36,8 +35,6 @@ body{
     margin: 2px auto;
     background: linear-gradient(45deg, #030331, #006, #007 );
     border-radius: 10px;
-    justify-self: flex-start;
-    align-self: flex-start;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -49,7 +46,6 @@ body{
 .fotoPerfil{
     width: 180px;
     height: 180px;
-    /* border-radius: 80px; */
     border: 2px solid #225;
     justify-self: center;
     align-self: center;

@@ -1,0 +1,41 @@
+@media(max-width: 900px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .dados,
+    .sobre,
+    .rodape{
+        width: 100%;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: space-evenly;
+    }
+    .dados-principais{
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 15px;
+        
+    }
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .fotoPerfil{
+        border-radius: 10px;
+    }
+    .menu,.exibir-menu{
+        display: none;
+    }
+}
+@media(max-width: 320px){
+    .dados-principais{
+        margin: 0 auto;
+        text-align: justify;
+        font-size: 10px;
+    }
+
+
+}
